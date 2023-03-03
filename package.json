@@ -1,0 +1,28 @@
+{
+  "name": "hardhat-fund-me",
+  "author": "Shikhin Arora",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx hardhat test",
+    "test-staging": "npx hardhat test --network goerli",
+    "lint": "npx solhint 'contracts/*.sol'",
+    "lint:fix": "npx solhint 'contracts/*.sol' --fix",
+    "format": "npx prettier --write .",
+    "coverage": "npx hardhat coverage"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.7",
+    "hardhat-deploy": "^0.11.23",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier-plugin-solidity": "^1.1.2",
+    "solhint": "^3.4.0",
+    "solidity-coverage": "^0.8.2"
+  }
+}
